@@ -10,9 +10,9 @@ contract Bank {
    }
    
    function deposit() external payable {
-     ba
-     lance += msg.value;
+     balance += msg.value;
    }
+   
    function withdraw(uint _amount) external {     
      require(balance >= _amount, "Insufficient balance!");
      payable(owner).transfer(_amount);
